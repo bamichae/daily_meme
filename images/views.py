@@ -22,6 +22,11 @@ def index_view(request):
         'upload_form': upload_form,
     })
 
+def test_view(request):
+    images = Image.objects.all()
+    return render(request, "images/test.html", {
+        'images': images})
+
 
 @require_http_methods(["POST"])
 def upload_view(request):

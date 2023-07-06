@@ -1,0 +1,10 @@
+<html>
+<head>
+    <title>MY SITE</title>
+</head>
+<body>
+{% for image in images %}
+<img src={{image.file.url}}>
+{% endfor %}
+</body>
+</html>
