@@ -23,9 +23,9 @@ def index_view(request):
     })
 
 def test_view(request):
-    images = Image.objects.all()
+    image = Image.objects.get(pk=1)
     return render(request, "images/test.html", {
-        'images': images})
+        'image': image})
 
 
 @require_http_methods(["POST"])
