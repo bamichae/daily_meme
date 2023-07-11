@@ -20,11 +20,11 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Upload a Meme</h5>
-                        <p class="card-text">Fill out the form and press submit in order to upload a new image.</p>
+                        <p class="card-text">Fill out the form and press Override the Meme in order to upload a new image.</p>
                         <form action="{% url "images-upload" %}" enctype="multipart/form-data" method="post">
                         {% csrf_token %}
                         {{ upload_form|crispy }}
-                        <input type="submit" class="btn btn-primary w-100" value="Upload a Meme">
+                        <input type="submit" class="btn btn-primary w-100" value="Override the Meme">
                         </form>
                     </div>
                 </div>
