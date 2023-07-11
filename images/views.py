@@ -16,7 +16,7 @@ def index_view(request):
     image_table = ImageTable(images)
     upload_form = UploadForm()
 
-    return render(request, 'images/test.html', {
+    return render(request, 'images/override.html', {
         'images': images,
         'image_table': image_table,
         'upload_form': upload_form,
