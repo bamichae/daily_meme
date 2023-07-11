@@ -16,7 +16,7 @@ def index_view(request):
     image_table = ImageTable(images)
     upload_form = UploadForm()
 
-    return render(request, 'images/index.html', {
+    return render(request, 'images/test.html', {
         'images': images,
         'image_table': image_table,
         'upload_form': upload_form,
@@ -24,7 +24,7 @@ def index_view(request):
 
 def test_view(request):
     image = Image.objects.get(pk=1)
-    return render(request, "images/test.html", {
+    return render(request, "images/index.html", {
         'image': image})
 
 
