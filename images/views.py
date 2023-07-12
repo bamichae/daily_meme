@@ -6,6 +6,8 @@ from django.views.decorators.http import require_http_methods
 from images.forms import UploadForm
 from images.models import Image
 from images.tables import ImageTable
+from django.views.decorators.csrf import csrf_exempt
+
 
 
 logger = logging.getLogger(__name__)
@@ -30,6 +32,7 @@ def test_view(request):
 
 
 @require_http_methods(["POST"])
+@csrf_exempt
 def upload_view(request):
     upload_form = UploadForm(data=request.POST, files=request.FILES)
 
