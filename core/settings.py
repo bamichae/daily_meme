@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m10c@k!u5b!y@=n%!9dxmc4#=q)q$)tdu$6$&w#1p_y107=2c_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://3.83.27.88', 'dailymeme.co', '0.0.0.0:8000']
+ALLOWED_HOSTS = ['3.83.27.88', 'dailymeme.co', '0.0.0.0:8000']
 
 
 # Application definition
