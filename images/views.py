@@ -23,7 +23,8 @@ def index_view(request):
     })
 
 def test_view(request):
-    image = Image.objects.get(pk=1)
+    # Get the newest image
+    image = Image.objects.order_by('-pk')[0]
     return render(request, "images/index.html", {
         'image': image})
 
