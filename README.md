@@ -1,8 +1,6 @@
 # daily_meme
 
-A simple image hosting application written in Django.
-
-This project is primarily used to demonstrate how to [deploy](https://github.com/duplxey/django-images#want-to-learn-how-to-deploy-this-project) Django to various platforms.
+Iterating on django-images to create a daily meme program
 
 ## Want to use this project?
 

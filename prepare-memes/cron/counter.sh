@@ -1,0 +1,3 @@
+declare -i COUNTER
+COUNTER=1
+export COUNTER
