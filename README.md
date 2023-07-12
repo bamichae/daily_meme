@@ -1,4 +1,4 @@
-# django-images
+# daily_meme
 
 A simple image hosting application written in Django.
 
