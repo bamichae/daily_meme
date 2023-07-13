@@ -23,11 +23,12 @@ def get_this_directory():
 def get_output_directory():
     this_directory = get_this_directory()
     return os.path.join(this_directory, 'output')
+
 def update_meme(count):
     url = 'http://3.83.27.88:8000/upload'
     payload = open(os.path.join(get_output_directory(), f'{count._count}.png'), 'rb')
-    files = {'fileToUpload': payload}
-    x = requests.post(url, verify=False, files=files)
+    file = {'uploaded_file': payload}
+    x = requests.post(url, verify=False, files=file)
     print(x.status_code)
     count.increment()
 
