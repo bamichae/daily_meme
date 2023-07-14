@@ -38,6 +38,7 @@ def upload_view(request):
 
     if upload_form.is_valid():
         upload_form.save(commit=True)
+        return redirect('test-upload')
     else:
         logger.warning("Something went wrong with uploading the file.")
         logger.warning(request.POST)
