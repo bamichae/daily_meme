@@ -24,8 +24,8 @@ def get_output_directory():
     this_directory = get_this_directory()
     return os.path.join(this_directory, 'output')
 
-def update_meme(count):
-    url = 'http://3.83.27.88:8000/upload'
+def update_meme(count, url):
+    url = f'{url}/upload'
     payload = open(os.path.join(get_output_directory(), f'{count._count}.png'), 'rb')
     file = {'uploaded_file': payload}
     x = requests.post(url, verify=False, files=file)
@@ -34,7 +34,8 @@ def update_meme(count):
 
 
 count = Count()
-schedule.every(10).seconds.do(update_meme, count)
+url = '127.0.0.1:8000'
+schedule.every(10).seconds.do(update_meme, count, url)
 
 while True:
     schedule.run_pending()
