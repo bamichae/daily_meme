@@ -1,3 +1,0 @@
-This crontab will run every day at 1am (this is not the actual crontab):
-
-0 1 * * *
