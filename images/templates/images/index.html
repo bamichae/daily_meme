@@ -4,16 +4,22 @@
 </head>
 <body>
 <div style="text-align: center;">
-<h3 class="mt-3">The Manateem Daily Meme</h3>
+    <h3 class="mt-3">The Manateem Daily Meme</h3>
 
-<p style= "text-align: center;">
-    <img width="800" height="800" src={{image.file.url}} class="center">
-</p>
+    <p style="text-align: center;">
+        <img width="750" height="750" src={{image.file.url}} class="center">
+    </p>
 </div>
 <div style="text-align: center;">
-<h3 class="mt-3">
-Override the Manateem Daily Meme at <a href="{% url 'images-index' %}">dailymeme.co/override</a>
-</h3>
+    <h3 class="mt-3">
+        Override the Manateem Daily Meme at <a href="{% url 'images-index' %}">dailymeme.co/override</a>
+    </h3>
+    {% if image.is_daily_meme %}
+    <h2 style="color:red;" class="mt-3">
+        DAILY MEME OVERRIDEN {{image.uploaded_at}}!!
+    </h2>
+    {% endif %}
+
 </div>
 </body>
 </html>
