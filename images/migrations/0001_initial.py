@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('file', models.ImageField(upload_to='images/')),
                 ('uploaded_at', models.DateTimeField(auto_now_add=True)),
+                ('is_daily_meme', models.BooleanField(default=False)),
             ],
             options={
                 'ordering': ['-uploaded_at'],
