@@ -10,6 +10,7 @@ urlpatterns = [
     path('', views.test_view, name='test-upload'),
 ]
 
+# TODO: This breaks python manage.py migrations; find a better place for it.
 from .models import Image
 def refresh_daily_meme(counter):
     """
