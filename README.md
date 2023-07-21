@@ -30,13 +30,16 @@ Iterating on django-images to create a daily meme program
     (venv)$ python manage.py runserver
     ```
     
- 6. Navigate to [http://localhost:8000/](http://localhost:8000/) in your favorite web browser.
+ 6. Navigate to [http://localhost:8000/](http://localhost:80/) in your favorite web browser.
 
-## Want to learn how to deploy this project?
 
-- [Google App Engine](https://testdriven.io/blog/django-gae/)
-- [AWS Elastic Beanstalk](https://testdriven.io/blog/django-elastic-beanstalk/)
-- [Render](https://testdriven.io/blog/django-render/)
-- [Fly.io](https://testdriven.io/blog/django-fly/)
-- [Dokku](https://testdriven.io/blog/django-dokku/)
+ 7. Example of Daily Meme website
+![img.png](img.png)
 
+
+ 8. Example of Override Page
+![Screenshot from 2023-07-20 21-21-41.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-07-20%2021-21-41.png)
+
+
+ 9. Example of Overriden Front Page
+![Screenshot from 2023-07-20 21-22-04.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-07-20%2021-22-04.png)
