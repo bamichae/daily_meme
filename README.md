@@ -34,12 +34,12 @@ Iterating on django-images to create a daily meme program
 
 
  7. Example of Daily Meme website
-![img.png](img.png)
+![1_readme.png](readme_images%2F1_readme.png)
 
 
  8. Example of Override Page
-![Screenshot from 2023-07-20 21-21-41.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-07-20%2021-21-41.png)
+![2_readme.png](readme_images%2F2_readme.png)
 
 
  9. Example of Overriden Front Page
-![Screenshot from 2023-07-20 21-22-04.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%20from%202023-07-20%2021-22-04.png)
+![3_readme.png](readme_images%2F3_readme.png)
